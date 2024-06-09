@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaijuu 8-gou Episodes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        #episodes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .episode {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .episode h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .episode button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .episode button:hover {
+            background-color: #45a049;
+        }
+        #player {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Kaijuu 8-gou Episodes</h1>
+    <div id="episodes">
+        <div class="episode">
+            <h2>Episode 1</h2>
+            <button onclick="playEpisode('https://www.ok.ru/videoembed/6825699969754')">ok.ru</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/46r20xj5')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 2</h2>
+            <button onclick="playEpisode('https://www.ok.ru/videoembed/6845203090138')">ok.ru</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/rixe7jke')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 3</h2>
+            <button onclick="playEpisode('https://www.ok.ru/videoembed/6864719317722')">ok.ru SD</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/pq8uyqbh')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 4</h2>
+            <button onclick="playEpisode('https://www.ok.ru/videoembed/6888314702554')">ok.ru</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/e983v7mt')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 5</h2>
+            <button onclick="playEpisode('https://www.ok.ru/videoembed/6910992452314')">ok.ru</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/jiolyb6k')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 6</h2>
+            <button onclick="playEpisode('https://www.ok.ru/videoembed/6933899315930')">ok.ru</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/zklf20rp')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 7</h2>
+            <button onclick="playEpisode('https://www.mp4upload.com/embed-4vfmaa010u6s.html')">Mp4upload</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/etbdmyh3')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 8</h2>
+            <button onclick="playEpisode('https://www.mp4upload.com/embed-96axdlp4ygg2.html')">Mp4upload</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/pxlayesy')">sendvid</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 9</h2>
+            <button onclick="playEpisode('https://www.mp4upload.com/embed-yp2br2dpr2r8.html')">Mp4upload</button>
+            <button onclick="playEpisode('https://sendvid.com/embed/xzy6d663')">sendvid</button>
+        </div>
+        <!-- تكرر هذا القالب للحلقات الأخرى -->
+    </div>
+
+    <div id="player" style="text-align: center;"></div>
+
+    <script>
+        function playEpisode(episodeURL) {
+            var episodeFrame = document.createElement('iframe');
+            episodeFrame.width = "560";
+            episodeFrame.height = "315";
+            episodeFrame.src = episodeURL;
+            episodeFrame.frameborder = "0";
+            episodeFrame.allowfullscreen = true;
+            document.getElementById('player').innerHTML = ''; // لإزالة الحلقة الحالية إذا كانت مشغلة
+            document.getElementById('player').appendChild(episodeFrame);
+        }
+    </script>
+</body>
+</html>
