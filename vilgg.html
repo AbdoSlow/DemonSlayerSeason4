@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinland Saga Episodes</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #drawer {
+            width: 200px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+            border-left: 1px solid #ccc;
+        }
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+        button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="drawer">
+        <h2>Episodes</h2>
+        <!-- Buttons for each episode -->
+        <button onclick="playEpisode('episode1')">Episode 1</button>
+        <button onclick="playEpisode('episode2')">Episode 2</button>
+        <button onclick="playEpisode('episode3')">Episode 3</button>
+        <button onclick="playEpisode('episode4')">Episode 4</button>
+        <button onclick="playEpisode('episode5')">Episode 5</button>
+        <button onclick="playEpisode('episode6')">Episode 6</button>
+        <button onclick="playEpisode('episode7')">Episode 7</button>
+        <button onclick="playEpisode('episode8')">Episode 8</button>
+        <button onclick="playEpisode('episode9')">Episode 9</button>
+        <button onclick="playEpisode('episode10')">Episode 10</button>
+        <button onclick="playEpisode('episode11')">Episode 11</button>
+        <button onclick="playEpisode('episode12')">Episode 12</button>
+        <button onclick="playEpisode('episode13')">Episode 13</button>
+        <button onclick="playEpisode('episode14')">Episode 14</button>
+        <button onclick="playEpisode('episode15')">Episode 15</button>
+        <button onclick="playEpisode('episode16')">Episode 16</button>
+        <button onclick="playEpisode('episode17')">Episode 17</button>
+        <button onclick="playEpisode('episode18')">Episode 18</button>
+        <button onclick="playEpisode('episode19')">Episode 19</button>
+        <button onclick="playEpisode('episode20')">Episode 20</button>
+        <button onclick="playEpisode('episode21')">Episode 21</button>
+        <button onclick="playEpisode('episode22')">Episode 22</button>
+        <button onclick="playEpisode('episode23')">Episode 23</button>
+        <button onclick="playEpisode('episode24')">Episode 24</button>
+        <!-- Add buttons for the remaining episodes -->
+        <!-- You can continue this pattern for all 24 episodes -->
+        <!-- Ensure you have proper naming conventions for each button -->
+    </div>
+    <div id="content">
+        <h1>Vinland Saga Episodes</h1>
+        <div id="videoContainer"></div>
+    </div>
+
+    <script>
+        // Function to play the selected episode
+        function playEpisode(episodeName) {
+            var videoContainer = document.getElementById("videoContainer");
+            
+            // Remove any previously embedded video
+            videoContainer.innerHTML = "";
+            
+            // Embed the selected episode
+            var embedCode = '<iframe width="560" height="315" src="https://mega.nz/embed/';
+            
+            // Add the appropriate episode URL based on the episode name
+            switch(episodeName) {
+                case 'episode1':
+                    embedCode += 'MfUX0KSD#VHu7bpxain3n65UfJP9GRtashkIcLMcOK_DREfgNP9k" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                case 'episode2':
+                    embedCode += 'RTcjUBpL#ZkIFMUgAO28YiqghtvxnhpJUbCxPNxZaxGJtDtiS5GU" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode3':
+                    embedCode += '0G9xFBSJ#zMFna31pKx2NWaQ3uHraFx_QhFocy9YD3OJC4F8qigA" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode4':
+                    embedCode += 'EXkSFRxB#DcKboD-qqBxRriHTkkkTxLiZNPKSNvRnGeJWy9jx92k" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode5':
+                    embedCode += 'NfkR2Q7C#U65kxdaaqBE9p1kia_12KQaB33gNodQKFD7xIO6ZYYM" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode6':
+                    embedCode += 'BDE2XT6B#Upiitnn8iH1TUiGUaRsghP4DhaOe-T-lNbmPDJuEppw" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode7':
+                    embedCode += '0H9ikATI#9c6MTdOlv6bKsDub6hr7gdXwuKiTPjTtrX7RQJ350mM" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode8':
+                    embedCode += 'oXUTTTJA#9wIecYymwVIyVvHxG47t6IwZ19ZO4sItRfQoycZ6Ens" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode9':
+                    embedCode += 'JL0jXKLT#pU9WDWzPM8dpCAXszJbdXr1oxtkym4I7U29WjFxs1KA" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode10':
+                    embedCode += '9XUVDb7I#uspQUiFTmU9UrRv3St9NcLt9IRRijiNbidbOlVPk8lg" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode11':
+                    embedCode += 'AOkgkTiB#QhBdX-lhxeJ6Nzy-fnpRVaX51MpYvyiRX0hfw6wZKds" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode12':
+                    embedCode += 'pa92FBaC#0MFL1vR-LI2JlsLxgnCqjZEudun2XHE215R20d6CXdw" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode13':
+                    embedCode += '0PNWXSQA#NPIr_k3ukG71o1bI-Isn2MYwy9WETut2lDrJtcQHE4Q" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode14':
+                    embedCode += 'xGdD1brJ#AMaVYYtyNSd5MUWl-ovfHIOtAyln5jO1WZJxXp5KW60" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode15':
+                    embedCode += 'RDkTyZBS#y01uJa9QPWgnMy8jFSG4Ke8sSEHooVPZBuDZKFy6ZCI" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode16':
+                    embedCode += 'QKkXVI6Z#z9zPbJARuUdfzZMKWitlAOpnoKsuiug8qaMtHVTdTN8" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode17':
+                    embedCode += 'MC9FXDxQ#_iK4IJP2ccOmANSRs3iAPRMQFTcT6E4V1aRJgJu3G9g" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode18':
+                    embedCode += '9LdBzA7a#ow-hiJAhRjT9eSzRnn9Ia35p__5eWO4DGh41Jjn1BNk" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode19':
+                    embedCode += 'VbdFyDzI#Gzg2sny-IOsVS_JEC6kPEB8wU5j1hOslFwG4A8qnFqc" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode20':
+                    embedCode += 'kbcAyDSA#lgfpiKcVDeKakM-Cko8OH05mIPCZ5Wr7PFsSD89vQKA" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode21':
+                    embedCode += 'ka1iTLAC#rzrzCtcdyqMxHOVdVIc5KV4nnor0UaOK6foYkT7i9gU" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode22':
+                    embedCode += 'setlgByK#bUVdNUui8bR0FyMAoZlT-gs9-FLvvoewXZ2W2aA5pGg" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode23':
+                    embedCode += 'NLMQkQbC#IrieU3SK_vrrx_Ihc3gXYurTUj3Mg5ckRn_KD_5tUnA" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                    case 'episode24':
+                    embedCode += 'RH83BLhQ#_vuFC-WNmgXrG8nLqdMe7yGaKOQAEZRKB_pQbyn0EPw" frameborder="0" allowfullscreen></iframe>';
+                    break;    
+                // Add cases for the remaining episodes
+                // Ensure proper naming conventions and replace VIDEO_ID_OF_EPISODE_X with actual video IDs
+                default:
+                    embedCode += 'DEFAULT_VIDEO_ID" frameborder="0" allowfullscreen></iframe>';
+            }
+            
+            // Append the embedded video to the container
+            videoContainer.innerHTML = embedCode;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meitantei Conan Movie 01: Tokei Jikake no Matenrou</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #drawer {
+            width: 200px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            box-sizing: border-box;
+            border-left: 1px solid #ccc;
+        }
+        #content {
+            flex: 1;
+            padding: 20px;
+        }
+        button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="drawer">
+        <h2>الفلم</h2>
+        <!-- Buttons for each episode -->
+        <button onclick="playEpisode('Film1')">الفلم</button>
+        <!-- Add buttons for the remaining episodes -->
+        <!-- You can continue this pattern for all 24 episodes -->
+        <!-- Ensure you have proper naming conventions for each button -->
+    </div>
+    <div id="content">
+        <h1>فيلم Meitantei Conan Movie 01: Tokei Jikake no Matenrou</h1>
+        <div id="videoContainer"></div>
+    </div>
+
+    <script>
+        // Function to play the selected episode
+        function playEpisode(episodeName) {
+            var videoContainer = document.getElementById("videoContainer");
+            
+            // Remove any previously embedded video
+            videoContainer.innerHTML = "";
+            
+            // Embed the selected episode
+            var embedCode = '<iframe width="560" height="315" src="https://www.4shared.com/web/embed/file/';
+            
+            // Add the appropriate episode URL based on the episode name
+            switch(episodeName) {
+                case 'Film1':
+                    embedCode += 'DiD_DDPOea" frameborder="0" allowfullscreen></iframe>';
+                    break;
+                // Add cases for the remaining episodes
+                // Ensure proper naming conventions and replace VIDEO_ID_OF_EPISODE_X with actual video IDs
+                default:
+                    embedCode += 'DiD_DDPOea" frameborder="0" allowfullscreen></iframe>';
+            }
+            
+            // Append the embedded video to the container
+            videoContainer.innerHTML = embedCode;
+        }
+    </script>
+</body>
+</html>
