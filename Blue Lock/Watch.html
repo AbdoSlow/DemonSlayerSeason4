@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Episodes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        #episodes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .episode {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .episode h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .episode button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .episode button:hover {
+            background-color: #45a049;
+        }
+        #player {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Episodes</h1>
+    <div id="episodes">
+        <div class="episode">
+            <h2>Episode 1</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/ABMzQs5Gjq')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 2</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/8P4YmNFPge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 3</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/OAsMMD8pku')">Watch</button>
+        </div><div class="episode">
+            <h2>Episode 4</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/lher-j3vfa')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 5</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/lbnAky54ku')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 6</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/NfiK46BKge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 7</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/dn4C3gkKfa')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 8</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/aW3OTgTHge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 9</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/ycdmF5foge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 10</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/m4qh7Sefjq')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 11</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/0cd0A5_mge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 12</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/3Hskoz1jfa')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 13</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/2ibx2K4dge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 14</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/Fh-zcq52jq')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 15</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/oDdWv1Ulfa')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 16</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/WKN0t-pBge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 17</h2>
+            <button onclick="playEpisode('https://uqload.ws/embed-npmeqwgnw5xb.html')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 18</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/J-o6fuH3jq')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 19</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/KGb1Reabge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 20</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/KV8MCJCTge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 21</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/OZlZlNpPku')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 22</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/H9nYRxpXge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 23</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/sxolUN1Xge')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 24</h2>
+            <button onclick="playEpisode('https://www.4shared.com/web/embed/file/6JwBVPjsjq')">Watch</button>
+        </div>
+        <!-- تكرر هذا القالب للحلقات الأخرى -->
+    </div>
+
+    <div id="player" style="text-align: center;"></div>
+
+    <script>
+        function playEpisode(episodeURL) {
+            var episodeFrame = document.createElement('iframe');
+            episodeFrame.width = "560";
+            episodeFrame.height = "315";
+            episodeFrame.src = episodeURL;
+            episodeFrame.frameborder = "0";
+            episodeFrame.allowfullscreen = true;
+            document.getElementById('player').innerHTML = ''; // لإزالة الحلقة الحالية إذا كانت مشغلة
+            document.getElementById('player').appendChild(episodeFrame);
+        }
+    </script>
+</body>
+</html>

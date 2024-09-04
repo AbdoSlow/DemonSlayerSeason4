@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Episodes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        #episodes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .episode {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .episode h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+        }
+        .episode button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .episode button:hover {
+            background-color: #45a049;
+        }
+        #player {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> Episodes</h1>
+    <div id="episodes">
+        <div class="episode">
+            <h2>Episode 1</h2>
+            <button onclick="playEpisode('https://zidwish.site/e/5zz9fve9a0d6')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 2</h2>
+            <button onclick="playEpisode('https://zidwish.site/e/hmna1vp2vxhg')">Watch</button>
+        </div>
+        <div class="episode">
+            <h2>Episode 3</h2>
+            <button onclick="playEpisode('https://zidwish.site/e/96r2lpak6ogr')">Watch</button>
+        </div>
+        <!-- تكرر هذا القالب للحلقات الأخرى -->
+    </div>
+
+    <div id="player" style="text-align: center;"></div>
+
+    <script>
+        function playEpisode(episodeURL) {
+            var episodeFrame = document.createElement('iframe');
+            episodeFrame.width = "560";
+            episodeFrame.height = "315";
+            episodeFrame.src = episodeURL;
+            episodeFrame.frameborder = "0";
+            episodeFrame.allowfullscreen = true;
+            document.getElementById('player').innerHTML = ''; // لإزالة الحلقة الحالية إذا كانت مشغلة
+            document.getElementById('player').appendChild(episodeFrame);
+        }
+    </script>
+</body>
+</html>
